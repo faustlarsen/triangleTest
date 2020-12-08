@@ -10,7 +10,7 @@ namespace Objects.Tests
     public void isItTriangle_Equilateral_True()
     {
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.isItTriangle(5, 4, 5));
+      Assert.AreEqual(true, testTriangle.isItTriangle(1, 0, 1));
     }
   }
 }
