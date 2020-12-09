@@ -1,16 +1,15 @@
-namespace Objects
+using System;
+
+namespace Triangle.Models
 {
   public class Triangle
   {
-    public bool isItTriangle(int side1, int side2, int side3)
+    public void EvaluateTriangle(int side1, int side2, int side3)
     {
       if (side1 == side2 && side2 == side3)
       {
-        return true;
-      } else
-        {
-          return false;
-        }
+        Console.WriteLine("Equalateral");
+      }
     }
   }
 }

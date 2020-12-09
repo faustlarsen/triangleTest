@@ -1,16 +1,15 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Objects;
 
-namespace Objects.Tests
+namespace Triangle.Tests
 {
   [TestClass]
-  public class TriangleTests
+  public class TriangleTrackerTests
   {
     [TestMethod]
-    public void isItTriangle_Equilateral_True()
+    public void EvaluateTriangle_ReturnsSumOfThreeIntegersWhenPassedThreeIntegers_SideOneSideTwoSideThree()
     {
-      Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.isItTriangle(1, 0, 1));
+      TriangleTracker testTriangleTracker = new TriangleTracker();
+      Assert.AreEqual(3 + 4 + 6, testTriangleTracker.EvaluateTriangle(3, 4, 6));
     }
   }
 }
