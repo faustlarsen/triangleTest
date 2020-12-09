@@ -13,3 +13,7 @@ namespace Triangle.Models
     }
   }
 }
+
+EvaluateTriangle is an instance method, which means you need to call it on an instance of the Triangle class.
+
+You need 
